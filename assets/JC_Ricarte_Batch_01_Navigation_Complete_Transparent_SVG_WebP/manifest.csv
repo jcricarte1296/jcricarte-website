@@ -1,0 +1,13 @@
+icon,theme,svg,webp
+home,light,light/svg/home-light.svg,light/webp/home-light.webp
+about,light,light/svg/about-light.svg,light/webp/about-light.webp
+services,light,light/svg/services-light.svg,light/webp/services-light.webp
+blog-resources,light,light/svg/blog-resources-light.svg,light/webp/blog-resources-light.webp
+contact,light,light/svg/contact-light.svg,light/webp/contact-light.webp
+search,light,light/svg/search-light.svg,light/webp/search-light.webp
+home,dark,dark/svg/home-dark.svg,dark/webp/home-dark.webp
+about,dark,dark/svg/about-dark.svg,dark/webp/about-dark.webp
+services,dark,dark/svg/services-dark.svg,dark/webp/services-dark.webp
+blog-resources,dark,dark/svg/blog-resources-dark.svg,dark/webp/blog-resources-dark.webp
+contact,dark,dark/svg/contact-dark.svg,dark/webp/contact-dark.webp
+search,dark,dark/svg/search-dark.svg,dark/webp/search-dark.webp

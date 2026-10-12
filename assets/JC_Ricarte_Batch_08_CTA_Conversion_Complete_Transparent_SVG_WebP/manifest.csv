@@ -1,0 +1,13 @@
+theme,icon,svg_path,webp_path
+light,get-started,light/svg/jc_ricarte_batch08_get-started_light.svg,light/webp/jc_ricarte_batch08_get-started_light.webp
+light,book-a-call,light/svg/jc_ricarte_batch08_book-a-call_light.svg,light/webp/jc_ricarte_batch08_book-a-call_light.webp
+light,contact-us,light/svg/jc_ricarte_batch08_contact-us_light.svg,light/webp/jc_ricarte_batch08_contact-us_light.webp
+light,download,light/svg/jc_ricarte_batch08_download_light.svg,light/webp/jc_ricarte_batch08_download_light.webp
+light,learn-more,light/svg/jc_ricarte_batch08_learn-more_light.svg,light/webp/jc_ricarte_batch08_learn-more_light.webp
+light,view-case-studies,light/svg/jc_ricarte_batch08_view-case-studies_light.svg,light/webp/jc_ricarte_batch08_view-case-studies_light.webp
+dark,get-started,dark/svg/jc_ricarte_batch08_get-started_dark.svg,dark/webp/jc_ricarte_batch08_get-started_dark.webp
+dark,book-a-call,dark/svg/jc_ricarte_batch08_book-a-call_dark.svg,dark/webp/jc_ricarte_batch08_book-a-call_dark.webp
+dark,contact-us,dark/svg/jc_ricarte_batch08_contact-us_dark.svg,dark/webp/jc_ricarte_batch08_contact-us_dark.webp
+dark,download,dark/svg/jc_ricarte_batch08_download_dark.svg,dark/webp/jc_ricarte_batch08_download_dark.webp
+dark,learn-more,dark/svg/jc_ricarte_batch08_learn-more_dark.svg,dark/webp/jc_ricarte_batch08_learn-more_dark.webp
+dark,view-case-studies,dark/svg/jc_ricarte_batch08_view-case-studies_dark.svg,dark/webp/jc_ricarte_batch08_view-case-studies_dark.webp

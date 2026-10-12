@@ -1,0 +1,11 @@
+theme,icon,svg,webp
+light,crm-management,light/crm-management.svg,light/crm-management.webp
+light,automation-workflows,light/automation-workflows.svg,light/automation-workflows.webp
+light,email-sequences,light/email-sequences.svg,light/email-sequences.webp
+light,integrations-sync,light/integrations-sync.svg,light/integrations-sync.webp
+light,ai-automation,light/ai-automation.svg,light/ai-automation.webp
+dark,crm-management,dark/crm-management.svg,dark/crm-management.webp
+dark,automation-workflows,dark/automation-workflows.svg,dark/automation-workflows.webp
+dark,email-sequences,dark/email-sequences.svg,dark/email-sequences.webp
+dark,integrations-sync,dark/integrations-sync.svg,dark/integrations-sync.webp
+dark,ai-automation,dark/ai-automation.svg,dark/ai-automation.webp

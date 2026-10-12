@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Paid Ads Strategy icon for light backgrounds">
+ <title>Paid Ads Strategy — JC Ricarte Light Icon</title>
+ <g fill="none" stroke="#0F2740" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="54" cy="75" r="39"/><circle cx="54" cy="75" r="20"/>
+ </g>
+ <circle cx="54" cy="75" r="6.5" fill="#2E7D73"/>
+ <path d="M54 75 L105 24" fill="none" stroke="#2E7D73" stroke-width="8" stroke-linecap="round"/>
+ <path d="M84 25 L105 24 L105 45" fill="none" stroke="#2E7D73" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-label="AEO (Answer Engines)">
+
+ <path d="M34 17 H77 L98 38 V104 Q98 110 92 110 H34 Q28 110 28 104 V23 Q28 17 34 17 Z" fill="none" stroke="#0F2740" stroke-width="7.5" stroke-linejoin="round"/>
+ <path d="M77 18 V38 H97" fill="none" stroke="#0F2740" stroke-width="7.5" stroke-linejoin="round"/>
+ <path d="M42 56 H63 M42 73 H83 M42 90 H75" fill="none" stroke="#2E7D73" stroke-width="7" stroke-linecap="round"/>
+ 
+</svg>

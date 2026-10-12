@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Ad Performance &amp; ROI icon for dark backgrounds">
+ <title>Ad Performance &amp; ROI — JC Ricarte Dark Icon</title>
+ <rect x="28" y="82" width="18" height="34" rx="4" fill="#49B8AA"/>
+ <rect x="57" y="63" width="18" height="53" rx="4" fill="#FFFFFF"/>
+ <rect x="86" y="39" width="18" height="77" rx="4" fill="#49B8AA"/>
+ <g fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M20 116 H113"/>
+  <path d="M26 61 L57 45 L79 54 L110 22"/>
+  <path d="M89 22 H110 V43"/>
+ </g>
+</svg>

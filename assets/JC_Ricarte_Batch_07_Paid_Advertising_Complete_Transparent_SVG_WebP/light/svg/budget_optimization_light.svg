@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Budget Optimization icon for light backgrounds">
+ <title>Budget Optimization — JC Ricarte Light Icon</title>
+ <circle cx="57" cy="76" r="40" fill="none" stroke="#0F2740" stroke-width="7"/>
+ <path d="M69 55 C62 48 45 49 40 59 C32 76 74 72 75 88 C76 107 50 108 40 98" fill="none" stroke="#2E7D73" stroke-width="6.5" stroke-linecap="round"/>
+ <path d="M57 45 V108" fill="none" stroke="#2E7D73" stroke-width="6" stroke-linecap="round"/>
+ <circle cx="96" cy="27" r="18" fill="#FFFFFF" stroke="#2E7D73" stroke-width="6"/>
+ <path d="M87 27 L94 34 L106 21" fill="none" stroke="#2E7D73" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

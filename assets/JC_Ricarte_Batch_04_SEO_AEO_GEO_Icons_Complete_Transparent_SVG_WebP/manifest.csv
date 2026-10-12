@@ -1,0 +1,11 @@
+theme,icon,svg,webp
+light,SEO Optimization,light/svg/seo_optimization_light.svg,light/webp/seo_optimization_light.webp
+light,AEO (Answer Engines),light/svg/aeo_answer_engines_light.svg,light/webp/aeo_answer_engines_light.webp
+light,GEO (Local SEO),light/svg/geo_local_seo_light.svg,light/webp/geo_local_seo_light.webp
+light,Rankings & Visibility,light/svg/rankings_visibility_light.svg,light/webp/rankings_visibility_light.webp
+light,Backlinks & Authority,light/svg/backlinks_authority_light.svg,light/webp/backlinks_authority_light.webp
+dark,SEO Optimization,dark/svg/seo_optimization_dark.svg,dark/webp/seo_optimization_dark.webp
+dark,AEO (Answer Engines),dark/svg/aeo_answer_engines_dark.svg,dark/webp/aeo_answer_engines_dark.webp
+dark,GEO (Local SEO),dark/svg/geo_local_seo_dark.svg,dark/webp/geo_local_seo_dark.webp
+dark,Rankings & Visibility,dark/svg/rankings_visibility_dark.svg,dark/webp/rankings_visibility_dark.webp
+dark,Backlinks & Authority,dark/svg/backlinks_authority_dark.svg,dark/webp/backlinks_authority_dark.webp

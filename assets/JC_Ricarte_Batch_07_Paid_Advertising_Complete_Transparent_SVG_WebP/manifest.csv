@@ -1,0 +1,11 @@
+icon_slug,display_name,theme,svg_path,webp_path,webp_px,background,svg_type
+paid_ads_strategy,Paid Ads Strategy,light,light/svg/paid_ads_strategy_light.svg,light/webp/paid_ads_strategy_light.webp,512x512,transparent,true_vector
+ad_campaigns_ppc,Ad Campaigns (PPC),light,light/svg/ad_campaigns_ppc_light.svg,light/webp/ad_campaigns_ppc_light.webp,512x512,transparent,true_vector
+ad_performance_roi,Ad Performance & ROI,light,light/svg/ad_performance_roi_light.svg,light/webp/ad_performance_roi_light.webp,512x512,transparent,true_vector
+audience_targeting,Audience Targeting,light,light/svg/audience_targeting_light.svg,light/webp/audience_targeting_light.webp,512x512,transparent,true_vector
+budget_optimization,Budget Optimization,light,light/svg/budget_optimization_light.svg,light/webp/budget_optimization_light.webp,512x512,transparent,true_vector
+paid_ads_strategy,Paid Ads Strategy,dark,dark/svg/paid_ads_strategy_dark.svg,dark/webp/paid_ads_strategy_dark.webp,512x512,transparent,true_vector
+ad_campaigns_ppc,Ad Campaigns (PPC),dark,dark/svg/ad_campaigns_ppc_dark.svg,dark/webp/ad_campaigns_ppc_dark.webp,512x512,transparent,true_vector
+ad_performance_roi,Ad Performance & ROI,dark,dark/svg/ad_performance_roi_dark.svg,dark/webp/ad_performance_roi_dark.webp,512x512,transparent,true_vector
+audience_targeting,Audience Targeting,dark,dark/svg/audience_targeting_dark.svg,dark/webp/audience_targeting_dark.webp,512x512,transparent,true_vector
+budget_optimization,Budget Optimization,dark,dark/svg/budget_optimization_dark.svg,dark/webp/budget_optimization_dark.webp,512x512,transparent,true_vector
