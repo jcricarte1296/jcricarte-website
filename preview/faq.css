@@ -1,0 +1,78 @@
+/* Native details/summary: mouse, touch, and keyboard work without JavaScript. */
+.jc-faq {
+  background: #F1F5F9;
+  padding-block: 80px;
+}
+.jc-faq-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr);
+  gap: 70px;
+  align-items: start;
+}
+.jc-faq-list {
+  border-top: 1px solid #CED9E2;
+}
+.jc-faq-item {
+  border-bottom: 1px solid #CED9E2;
+}
+.jc-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+  min-height: 64px;
+  color: #0F2740;
+  list-style: none;
+  cursor: pointer;
+}
+.jc-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.jc-faq-item summary h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -.2px;
+}
+.jc-faq-item summary img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform .15s ease;
+}
+.jc-faq-item[open] summary img {
+  transform: rotate(180deg);
+}
+.jc-faq-item summary:hover {
+  color: #2E7D73;
+}
+.jc-faq-item summary:focus-visible {
+  outline: 3px solid #2E7D73;
+  outline-offset: 5px;
+}
+.jc-faq-answer {
+  padding: 0 40px 24px 0;
+}
+.jc-faq-answer p {
+  margin: 0;
+  color: #526477;
+  font-size: 13px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+.jc-faq-answer a {
+  color: #2E7D73;
+  text-underline-offset: 3px;
+}
+.jc-footer-contact[id] {
+  scroll-margin-top: 125px;
+}
+@media (max-width: 700px) {
+  .jc-faq { padding-block: 55px; }
+  .jc-faq-layout { grid-template-columns: 1fr; gap: 24px; }
+  .jc-faq-answer { padding-right: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jc-faq-item summary img { transition: none; }
+}

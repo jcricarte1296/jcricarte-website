@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-label="Scalable Architecture">
+  <title>Scalable Architecture</title>
+  <ellipse cx="64" cy="31" rx="39" ry="15" stroke="#FFFFFF" stroke-width="7" />
+    <path d="M25 31V91C25 100 42 107 64 107S103 100 103 91V31" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" />
+    <path d="M25 52C25 61 42 67 64 67S103 61 103 52" stroke="#2E7D73" stroke-width="7" />
+    <path d="M25 73C25 82 42 88 64 88S103 82 103 73" stroke="#FFFFFF" stroke-width="7" />
+    <path d="M86 94V102" stroke="#2E7D73" stroke-width="5" stroke-linecap="round" />
+</svg>

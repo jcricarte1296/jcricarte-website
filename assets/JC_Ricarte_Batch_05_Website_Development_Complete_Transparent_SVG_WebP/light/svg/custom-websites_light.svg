@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-label="Custom Websites">
+  <title>Custom Websites</title>
+  <rect x="18" y="22" width="92" height="70" rx="7" stroke="#0F2740" stroke-width="8" />
+    <path d="M18 39H110" stroke="#0F2740" stroke-width="7" />
+    <circle cx="31" cy="31" r="3.5" fill="#2E7D73" />
+    <circle cx="43" cy="31" r="3.5" fill="#2E7D73" />
+    <path d="M45 60L34 70L45 80 M83 60L94 70L83 80" stroke="#2E7D73" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M72 58L58 83" stroke="#0F2740" stroke-width="6" stroke-linecap="round" />
+    <path d="M64 92V105 M43 108H85" stroke="#0F2740" stroke-width="7" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,68 @@
+/* Static ambient light; no blur filter, extra markup, or JavaScript. */
+.jc-glow {
+  --jc-glow-color: 46 125 115; /* #2E7D73, RGB channels for alpha control */
+  --jc-glow-opacity: 0.08;
+  --jc-glow-width: 42%;
+  --jc-glow-height: 65%;
+  --jc-glow-x: 76%;
+  --jc-glow-y: 50%;
+  --jc-glow-falloff: 100%;
+  --jc-glow-strength: 1;
+  position: relative;
+  isolation: isolate;
+}
+.jc-glow--light { --jc-glow-opacity: 0.08; }
+.jc-glow--dark { --jc-glow-opacity: 0.16; }
+.jc-glow--hero {
+  --jc-glow-width: 42%;
+  --jc-glow-height: 65%;
+  --jc-glow-x: 77%;
+  --jc-glow-y: 50%;
+}
+.jc-glow--cta {
+  --jc-glow-width: 65%;
+  --jc-glow-height: 90%;
+  --jc-glow-x: 50%;
+  --jc-glow-y: 50%;
+}
+.jc-glow--subtle { --jc-glow-strength: 0.65; }
+/* Attach to the mascot wrapper so ambient light follows its position on every viewport. */
+.jc-glow--mascot {
+  --jc-glow-width: 48%;
+  --jc-glow-height: 48%;
+  --jc-glow-x: 50%;
+  --jc-glow-y: 50%;
+}
+.jc-glow--mascot.jc-glow--dark {
+  --jc-glow-opacity: 0.18;
+}
+
+/* Background color -> blueprint ::before (0) -> glow ::after (1) -> content (2). */
+.jc-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse var(--jc-glow-width) var(--jc-glow-height) at var(--jc-glow-x) var(--jc-glow-y),
+    rgb(var(--jc-glow-color) / calc(var(--jc-glow-opacity) * var(--jc-glow-strength))) 0%,
+    rgb(var(--jc-glow-color) / calc(var(--jc-glow-opacity) * var(--jc-glow-strength) * 0.55)) 35%,
+    rgb(var(--jc-glow-color) / 0) var(--jc-glow-falloff)
+  );
+}
+.jc-glow > * {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .jc-glow::after {
+    opacity: 0.65; /* 35% less ambient light on mobile */
+  }
+  .jc-glow--hero {
+    --jc-glow-width: 80%;
+    --jc-glow-height: 34%;
+    --jc-glow-x: 50%;
+    --jc-glow-y: 77%;
+  }
+}

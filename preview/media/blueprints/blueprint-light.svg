@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" fill="none" aria-hidden="true">
+  <style>.structure{stroke:#0F2740;stroke-opacity:.10}.accent{stroke:#2E7D73;stroke-opacity:.14}</style>
+  <g stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+  <g class="structure">
+    <!-- Browser wireframe -->
+    <rect x="915" y="65" width="400" height="240" rx="8"/>
+    <path d="M915 96h400M950 120h112M950 133h78M950 166h125v93H950zM1100 166h181v40h-181zM1100 221h81v38h-81zM1197 221h84v38h-84z"/>
+    <circle cx="933" cy="81" r="2"/><circle cx="945" cy="81" r="2"/><circle cx="957" cy="81" r="2"/>
+    <!-- Dashboard shell and plotting grid -->
+    <rect x="830" y="380" width="445" height="270" rx="8"/>
+    <path d="M830 413h445M930 413v237M850 440h58M850 462h44M850 484h51M950 443h300M950 485h300M950 527h300M950 569h300M990 430v165M1050 430v165M1110 430v165M1170 430v165M1230 430v165M950 610h300"/>
+    <!-- Code window -->
+    <rect x="100" y="60" width="235" height="125" rx="6"/>
+    <path d="M100 84h235M128 105l-10 10 10 10M149 105l10 10-10 10M144 100l-12 31M180 105h125M180 116h95M180 127h110M120 153h92M230 153h70"/>
+    <!-- Chart axes and pie schematic -->
+    <path d="M135 715v-86M135 715h200M350 735h280"/>
+    <circle cx="690" cy="105" r="39"/><path d="M690 66v39h39M690 105l-28 28"/>
+    <!-- Measurement and connection guides -->
+    <path d="M891 50h440M890 44v12M1331 44v12M1335 65v240M1329 65h12M1329 305h12M1275 514h70v-148h-30M335 120h80v95h140" stroke-dasharray="4 7"/>
+    <path d="M47 340h18M56 331v18M1370 710h18M1379 701v18M716 715h18M725 706v18"/>
+  </g>
+  <g class="accent">
+    <!-- Sparse line and bar charts -->
+    <path d="M958 564l46-35 50 12 48-60 47 17 51-58 43 8"/>
+    <circle cx="1004" cy="529" r="3"/><circle cx="1102" cy="481" r="3"/><circle cx="1200" cy="440" r="3"/>
+    <path d="M163 715v-30h22v30M204 715v-48h22v48M245 715v-67h22v67M286 715v-85h22v85"/>
+    <!-- Pipeline interface schematic -->
+    <rect x="415" y="665" width="58" height="30" rx="4"/><rect x="493" y="665" width="58" height="30" rx="4"/><rect x="571" y="665" width="58" height="30" rx="4"/>
+    <path d="M473 680h20M551 680h20M445 695v40M522 695v40M600 695v40M685 72a34 34 0 0 1 33 27h-33z"/>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+icon,label,theme,svg,webp
+custom-websites,Custom Websites,light,light/svg/custom-websites_light.svg,light/webp/custom-websites_light.webp
+mobile-optimized,Mobile Optimized,light,light/svg/mobile-optimized_light.svg,light/webp/mobile-optimized_light.webp
+clean-code,Clean Code,light,light/svg/clean-code_light.svg,light/webp/clean-code_light.webp
+fast-performance,Fast Performance,light,light/svg/fast-performance_light.svg,light/webp/fast-performance_light.webp
+scalable-architecture,Scalable Architecture,light,light/svg/scalable-architecture_light.svg,light/webp/scalable-architecture_light.webp
+custom-websites,Custom Websites,dark,dark/svg/custom-websites_dark.svg,dark/webp/custom-websites_dark.webp
+mobile-optimized,Mobile Optimized,dark,dark/svg/mobile-optimized_dark.svg,dark/webp/mobile-optimized_dark.webp
+clean-code,Clean Code,dark,dark/svg/clean-code_dark.svg,dark/webp/clean-code_dark.webp
+fast-performance,Fast Performance,dark,dark/svg/fast-performance_dark.svg,dark/webp/fast-performance_dark.webp
+scalable-architecture,Scalable Architecture,dark,dark/svg/scalable-architecture_dark.svg,dark/webp/scalable-architecture_dark.webp
