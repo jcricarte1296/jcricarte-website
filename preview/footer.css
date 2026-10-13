@@ -23,3 +23,5 @@
 @media(max-width:600px){.jc-footer-badges{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 @media(min-width:851px){.jc-footer-badges{grid-template-columns:repeat(10,minmax(0,1fr));max-width:none;gap:16px}.jc-footer-badges img{width:100%;max-width:90px;height:90px}}
+
+.jc-footer-contact{scroll-margin-top:110px}

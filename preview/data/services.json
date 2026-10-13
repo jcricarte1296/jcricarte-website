@@ -1,0 +1,78 @@
+{
+  "hub": {
+    "title": "Services | SEO, Paid Ads & Automation | JC Ricarte",
+    "description": "Explore SEO, paid ads, website development, CRM automation, and software development services by JC Ricarte."
+  },
+  "services": [
+    {
+      "slug": "seo-aeo-geo",
+      "name": "SEO / AEO / GEO",
+      "hero_title": "SEO, AEO & GEO services.",
+      "headline": "Get Found Where Your Customers Search",
+      "description": "Improve your website's visibility across Google and AI-powered search experiences with technical SEO, local SEO, content optimization, and search-focused website architecture.",
+      "meta_description": "Improve search visibility with technical SEO, local SEO, AEO, GEO, content optimization, and search-focused website architecture by JC Ricarte.",
+      "icon": "../assets/JC_Ricarte_Batch_04_SEO_AEO_GEO_Icons_Complete_Transparent_SVG_WebP/light/svg/seo_optimization_light.svg",
+      "capabilities": ["Technical and On-Page SEO", "Local SEO and Google Business Profile", "Answer Engine Optimization (AEO)", "Generative Engine Optimization (GEO)", "Keyword Research and Content Strategy"],
+      "cta": "Explore SEO Services",
+      "fit": "A practical starting point when prospective customers struggle to find your business through search.",
+      "connection": "Search visibility brings visitors to your website. Clear service pages and a connected inquiry process help turn that attention into qualified opportunities.",
+      "related": ["website-development", "paid-advertising"]
+    },
+    {
+      "slug": "website-development",
+      "name": "Website Development",
+      "hero_title": "Websites built around business growth.",
+      "headline": "Build a Website That Supports Business Growth",
+      "description": "Create or improve a fast, search-ready website designed to communicate your services clearly, deliver a better user experience, and turn visitors into inquiries.",
+      "meta_description": "Explore WordPress website development, search-ready architecture, landing pages, redesigns, conversion tracking, and integrations by JC Ricarte.",
+      "icon": "../assets/JC_Ricarte_Batch_05_Website_Development_Complete_Transparent_SVG_WebP/light/svg/custom-websites_light.svg",
+      "capabilities": ["WordPress Website Development", "SEO Website Architecture", "Landing Pages and Funnels", "Website Redesign and Optimization", "Conversion Tracking and Integrations"],
+      "cta": "Explore Website Development",
+      "fit": "A practical starting point when your website needs clearer messaging, a better user experience, or a stronger path from visits to inquiries.",
+      "connection": "Your website connects acquisition to action. Its pages, forms, and tracking should support the campaigns that bring visitors in and the systems that handle their inquiries.",
+      "related": ["seo-aeo-geo", "gohighlevel-automation"]
+    },
+    {
+      "slug": "gohighlevel-automation",
+      "name": "CRM & Automation",
+      "hero_title": "Connect your leads, pipeline, and follow-up.",
+      "headline": "Turn More Inquiries Into Sales Opportunities",
+      "description": "Build connected CRM systems that capture leads, organize pipelines, automate follow-ups, and help your team manage opportunities without unnecessary manual work.",
+      "meta_description": "Explore GoHighLevel CRM setup, sales pipelines, workflows, email and SMS automation, lead qualification, calendars, and integrations by JC Ricarte.",
+      "icon": "../assets/JC_Ricarte_Batch_06_CRM_Automation_Complete_Transparent_SVG_WebP/light/automation-workflows.svg",
+      "capabilities": ["GoHighLevel CRM Setup", "Sales Pipelines and Workflows", "Email and SMS Automation", "Lead Nurturing and Qualification", "Calendars and Business Integrations"],
+      "cta": "Explore CRM & Automation",
+      "fit": "A practical starting point when inquiries arrive but lead organization, qualification, or timely follow-up needs improvement.",
+      "connection": "CRM and automation connect the inquiry to the next step. Capture the lead, organize the opportunity, and keep relevant follow-up moving through your sales process.",
+      "related": ["website-development", "software-development"]
+    },
+    {
+      "slug": "paid-advertising",
+      "name": "Paid Advertising",
+      "hero_title": "Reach the right audience. Improve lead quality.",
+      "headline": "Reach the Right Audience and Improve Lead Quality",
+      "description": "Develop and optimize advertising campaigns focused on qualified leads, acquisition efficiency, and measurable conversions.",
+      "meta_description": "Explore Google Search Ads, Meta Ads, LinkedIn B2B advertising, campaign optimization, conversion tracking, and reporting services by JC Ricarte.",
+      "icon": "../assets/JC_Ricarte_Batch_07_Paid_Advertising_Complete_Transparent_SVG_WebP/light/svg/paid_ads_strategy_light.svg",
+      "capabilities": ["Google Search Ads", "Meta Ads and Retargeting", "LinkedIn B2B Advertising", "Campaign Strategy and Optimization", "Conversion Tracking and Reporting"],
+      "cta": "Explore Paid Advertising",
+      "fit": "A practical starting point when you need to reach a defined audience or improve the quality and efficiency of your advertising inquiries.",
+      "connection": "Campaigns work alongside landing pages, tracking, and lead management. Connect those handoffs to understand what drives inquiries and which leads become sales opportunities.",
+      "related": ["website-development", "gohighlevel-automation"]
+    },
+    {
+      "slug": "software-development",
+      "name": "Software Development",
+      "hero_title": "Build tools that solve business problems.",
+      "headline": "Build Tools That Solve Business Problems",
+      "description": "Develop custom software, web applications, and integrations designed to streamline workflows, connect business systems, and support operational efficiency.",
+      "meta_description": "Explore custom software, web applications, business dashboards, API integrations, and AI-assisted development services by JC Ricarte.",
+      "icon": "../assets/JC_Ricarte_Batch_05_Website_Development_Complete_Transparent_SVG_WebP/light/svg/clean-code_light.svg",
+      "capabilities": ["Custom Software Development", "Web Application Development", "Business Dashboards and Tools", "API and System Integrations", "AI-Assisted Development"],
+      "cta": "Explore Software Development",
+      "fit": "A practical starting point when your business needs a focused tool, integration, or workflow that existing systems do not handle well.",
+      "connection": "Custom development can connect the tools your team uses, reduce repetitive work, and make business information easier to act on alongside your marketing and CRM systems.",
+      "related": ["gohighlevel-automation", "website-development"]
+    }
+  ]
+}
