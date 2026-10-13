@@ -14,7 +14,7 @@ After editing `preview/index.html`, run `python3 scripts/build_root.py` before c
 
 Run `python3 -m http.server 8765 --bind 127.0.0.1` from this directory, then open `http://127.0.0.1:8765/`. The editable draft also remains available at `/preview/`.
 
-The hero rotates five mascots. The connected-system workflow uses a white blueprint background, alternating desktop cards, and a single-column mobile timeline. Its progress line and stage highlights follow scrolling; cards remain readable without JavaScript and respect reduced motion. The organizations strip uses the 22 supplied logos, served locally, with a continuous left-to-right loop, pause control, and a static scrollable row for reduced motion. Original image URLs are recorded in `preview/media/organizations/sources.json`. No framework or package installation is required.
+The hero rotates five mascots. The connected-system workflow uses the supplied dark blueprint WebP background, white cards that alternate on desktop, and a single-column mobile timeline. Its progress line and stage highlights follow scrolling; cards remain readable without JavaScript and respect reduced motion. The organizations strip uses the 22 supplied logos, served locally, with a continuous left-to-right loop, pause control, and a static scrollable row for reduced motion. Original image URLs are recorded in `preview/media/organizations/sources.json`. No framework or package installation is required.
 
 ## Hosting
 
