@@ -2,12 +2,16 @@
 .jc-system {
   --jc-system-accent: #49B8AA;
   --jc-blueprint-grid-color: rgb(255 255 255 / .14);
-  background: #0F2740;
+  background-color: #0F2740;
+  background-image: url("../assets/JC_Ricarte_Connected_System_Background.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: #FFFFFF;
   padding-block: 72px;
 }
 .jc-system.jc-blueprint--dark { --jc-blueprint-grid-color: rgb(255 255 255 / .14); }
-.jc-system.jc-blueprint::before { opacity: .35; mask-image: none; }
+.jc-system.jc-blueprint::before { content: none; }
 .jc-system-header {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, .85fr);
