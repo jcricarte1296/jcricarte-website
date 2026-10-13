@@ -4,12 +4,15 @@ Responsive static JC Ricarte website and its approved brand assets.
 
 - `preview/`: editable HTML, CSS, JavaScript, and optimized media.
 - `assets/`: original logos, icons, badges, mascots, backgrounds, and portraits.
-- `index.html`: redirects the root URL to the website in `preview/`.
+- `index.html`: generated homepage served directly at the repository URL.
+- `scripts/build_root.py`: builds the root homepage from the editable source.
 - Root ZIP archives and PNG boards: original asset exports and brand references.
 
 ## Local preview
 
-Run `python3 -m http.server 8765 --bind 127.0.0.1` from this directory, then open `http://127.0.0.1:8765/preview/`.
+After editing `preview/index.html`, run `python3 scripts/build_root.py` before committing or publishing. CSS, JavaScript, and media remain in their existing directories.
+
+Run `python3 -m http.server 8765 --bind 127.0.0.1` from this directory, then open `http://127.0.0.1:8765/`. The editable draft also remains available at `/preview/`.
 
 The hero rotates five mascots. The connected-system diagram adapts to desktop, tablet, and mobile, with accessible reduced-motion support. No framework or package installation is required.
 
