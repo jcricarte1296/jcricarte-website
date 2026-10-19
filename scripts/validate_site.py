@@ -13,7 +13,7 @@ from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / "preview/data/services.json").read_text())
-PAGES = [ROOT / "index.html", ROOT / "services/index.html"] + [
+PAGES = [ROOT / "index.html"] + [
     ROOT / service["slug"] / "index.html" for service in DATA["services"]
 ]
 

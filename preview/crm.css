@@ -1,0 +1,12 @@
+/* GoHighLevel visual; page sections reuse the shared service detail styles. */
+.jc-crm-workflow{margin:0;padding:28px;border:1px solid #ffffff30;border-radius:14px;background:#0F2740;box-shadow:0 14px 32px #0002}
+.jc-crm-workflow figcaption span{display:block;color:#49B8AA;font-size:9px;font-weight:700;letter-spacing:1.4px;margin-bottom:10px}
+.jc-crm-workflow figcaption strong{font-size:21px;line-height:1.4}
+.jc-crm-workflow ol{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:22px}
+.jc-crm-workflow li{position:relative;display:flex;align-items:start;gap:16px}
+.jc-crm-workflow li:not(:last-child)::after{content:"";position:absolute;top:32px;bottom:-22px;left:15px;width:1px;background:#49B8AA66}
+.jc-crm-workflow li>span{display:grid;place-items:center;flex:none;width:32px;height:32px;border:1px solid #49B8AA66;border-radius:50%;background:#19394D;color:#49B8AA;font-size:10px}
+.jc-crm-workflow li strong{font-size:13px;line-height:1.8}.jc-crm-workflow li p{margin:3px 0 0;font-size:11px;line-height:1.8;color:#C3CFDA}
+.jc-crm-workflow-note{border-top:1px solid #ffffff26;padding-top:16px;margin:24px 0 0;font-size:10px;line-height:1.8;color:#C3CFDA}
+.jc-crm-intro{max-width:760px;color:#526477;font-size:14px;line-height:1.85;margin:14px 0 0}
+@media(max-width:700px){.jc-crm-workflow{padding:24px}.jc-crm-intro{font-size:13px}}

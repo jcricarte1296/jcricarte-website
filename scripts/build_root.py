@@ -70,28 +70,22 @@ def capabilities(service):
     return "".join(f"<li>{escape(item)}</li>" for item in service["capabilities"])
 
 
-def service_card(service):
-    return f'''<article class="jc-services-service-card" aria-labelledby="jc-service-{escape(service['slug'])}">
-<div class="jc-services-service-summary"><div class="jc-services-service-name"><img src="{escape(service['icon'])}" width="64" height="64" alt="" loading="lazy" decoding="async"><span>{escape(service['name'])}</span></div><h3 id="jc-service-{escape(service['slug'])}">{escape(service['headline'])}</h3><p>{escape(service['description'])}</p></div>
-<div class="jc-services-service-details"><ul class="jc-services-capabilities">{capabilities(service)}</ul><a class="jc-text-link" href="../{escape(service['slug'])}/">{escape(service['cta'])} <span aria-hidden="true">→</span></a></div></article>'''
-
-
-def render_page(source, route, title, description, content, label):
+def render_page(source, route, title, description, content, label, extra_styles=""):
     header = shared_component(source, "header", "jc-header", route)
     footer = shared_component(source, "footer", "jc-footer", route)
     website = "https://jcricarte1296.github.io/jcricarte-website/"
     breadcrumbs = [{"@type": "ListItem", "position": 1, "name": "Home", "item": website}]
-    breadcrumbs.append({"@type": "ListItem", "position": 2, "name": "Services", "item": website + "services/"})
-    if route != "services":
-        breadcrumbs.append({"@type": "ListItem", "position": 3, "name": label, "item": website + route + "/"})
+    breadcrumbs.append({"@type": "ListItem", "position": 2, "name": label, "item": website + route + "/"})
     schema = json.dumps({"@context": "https://schema.org", "@graph": [
         {"@type": "WebPage", "@id": website + route + "/#webpage", "url": website + route + "/", "name": title, "description": description},
         {"@type": "BreadcrumbList", "@id": website + route + "/#breadcrumb", "itemListElement": breadcrumbs}
     ]}, ensure_ascii=False).replace("</", "<\\/")
+    compact_class = " jc-service-compact"
+    extra_styles += '<link rel="stylesheet" href="service-compact.css?v=mascots-2">'
     document = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)}</title><meta name="description" content="{escape(description, quote=True)}">
-<link rel="stylesheet" href="navbar.css?v=services-nav-2"><link rel="stylesheet" href="footer.css?v=contact-offset-2"><link rel="stylesheet" href="home.css?v=hero-reference-5"><link rel="stylesheet" href="blueprint.css?v=visibility-2"><link rel="stylesheet" href="services.css?v=hub-1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"><script src="navbar.js" defer></script><script type="application/ld+json">{schema}</script></head>
-<body><a class="jc-skip" href="#main">Skip to content</a>{header}<main id="main" class="jc-home jc-services-page">{content}</main>{footer}</body></html>
+<link rel="stylesheet" href="navbar.css?v=direct-services-contact-4"><link rel="stylesheet" href="footer.css?v=timeline-logo-4"><link rel="stylesheet" href="home.css?v=tablet-badge-order-12"><link rel="stylesheet" href="blueprint.css?v=about-light-3"><link rel="stylesheet" href="services.css?v=hub-1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">{extra_styles}<script src="navbar.js?v=direct-services-2" defer></script><script type="application/ld+json">{schema}</script></head>
+<body><a class="jc-skip" href="#main">Skip to content</a>{header}<main id="main" class="jc-home jc-services-page{compact_class}">{content}</main>{footer}</body></html>
 '''
     document = re.sub(r'\b(src|href|srcset)=([\"\'])(.*?)\2', lambda match: rewrite_page_attribute(match, route), document)
     assert "{{" not in document, f"Unresolved template in {route}"
@@ -103,10 +97,8 @@ def render_page(source, route, title, description, content, label):
 def build_services(source):
     data = json.loads((ROOT / "preview" / "data" / "services.json").read_text())
     services = data["services"]
+    badges = json.loads((ROOT / "preview/data/service-badges.json").read_text())
     lookup = {service["slug"]: service for service in services}
-    hub = (ROOT / "preview" / "pages" / "services.html").read_text()
-    hub = hub.replace("{{service_cards}}", "\n".join(service_card(service) for service in services))
-    render_page(source, "services", data["hub"]["title"], data["hub"]["description"], hub, "Services")
     template = (ROOT / "preview" / "pages" / "service.html").read_text()
     for service in services:
         related = "".join(f'''<article><h3>{escape(lookup[slug]['name'])}</h3><p>{escape(lookup[slug]['fit'])}</p><a class="jc-text-link" href="../{escape(slug)}/">{escape(lookup[slug]['cta'])} <span aria-hidden="true">→</span></a></article>''' for slug in service["related"])
@@ -115,8 +107,21 @@ def build_services(source):
         content = template
         for key, value in values.items():
             content = content.replace("{{" + key + "}}", value)
-        render_page(source, service["slug"], service["name"] + " Services | JC Ricarte", service["meta_description"], content, service["name"])
-    print("Built /services/ and five starter service pages with shared header and footer.")
+        custom = ROOT / "preview" / "pages" / (service["slug"] + ".html")
+        if custom.exists():
+            content = custom.read_text()
+        artwork = ''.join(f'<img src="{escape(b["src"])}" width="220" height="220" alt="{escape(b["alt"])}" decoding="async">' for b in badges[service["slug"]])
+        badge_row = f'<div class="jc-service-badges" role="group" aria-label="Platform and skills badges">{artwork}</div>'
+        content = re.sub(r'(<div class="jc-actions">.*?</div>)', lambda m: m.group() + badge_row, content, count=1, flags=re.S)
+        page_styles = {"seo-aeo-geo": "seo.css?v=seo-1", "website-development": "website.css?v=website-1", "gohighlevel-automation": "website.css?v=website-1", "paid-advertising": "website.css?v=website-1", "software-development": "website.css?v=website-1"}
+        extra_styles = f'<link rel="stylesheet" href="{page_styles[service["slug"]]}">' if service["slug"] in page_styles else ""
+        if service["slug"] == "gohighlevel-automation":
+            extra_styles += '<link rel="stylesheet" href="crm.css?v=crm-1">'
+        if service["slug"] == "paid-advertising":
+            extra_styles += '<link rel="stylesheet" href="paid.css?v=paid-1">'
+        extra_styles += '<link rel="stylesheet" href="glow.css?v=mascot-glow-1">'
+        render_page(source, service["slug"], service.get("seo_title", service["name"] + " Services | JC Ricarte"), service["meta_description"], content, service.get("breadcrumb_name", service["name"]), extra_styles)
+    print("Built five service pages with shared header and footer.")
 
 
 def build():

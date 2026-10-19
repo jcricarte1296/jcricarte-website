@@ -1,0 +1,48 @@
+/* Full Website Development page: scoped additions to the shared Services template. */
+.jc-web-hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:64px;align-items:center}
+.jc-web-hero h1{font-size:clamp(34px,3.7vw,50px);letter-spacing:-1.5px;line-height:1.16}
+.jc-web-hero h1 em{font-style:normal;color:#49B8AA}
+.jc-web-hero .jc-kicker{font-size:10px;line-height:1.8;letter-spacing:1.6px}
+.jc-web-highlights{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:24px 0 0;margin:36px 0 0;border-top:1px solid #ffffff26;font-size:11px;line-height:1.8;color:#C3CFDA}
+.jc-web-section{padding-block:72px;background:#fff}
+.jc-web-section.jc-blueprint::before{opacity:.5;mask-image:none}
+.jc-web-challenges{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px;margin-top:36px}
+.jc-web-challenges article{border-left:2px solid #B9D3CE;padding-left:22px}
+.jc-web-section h3{font-size:20px;line-height:1.45;margin:0 0 12px}
+.jc-web-section article p,.jc-web-process p,.jc-web-faqs p{font-size:13px;line-height:1.85;color:#526477;margin:0}
+.jc-web-note{max-width:880px;font-size:13px;line-height:1.85;color:#526477;border-top:1px solid #D8E3E8;padding-top:24px;margin:32px 0 20px}
+.jc-web-support{background:#F1F5F9}
+.jc-web-service-list{margin-top:36px;display:grid;gap:16px}
+.jc-web-service-list article{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:64px;background:#fff;padding:32px;border:1px solid #D8E3E8;border-radius:12px;scroll-margin-top:110px}
+.jc-web-service-list .jc-kicker{font-size:9px;margin:0 0 10px;color:#2E7D73}
+.jc-web-service-list ul{align-content:center}
+.jc-web-review-note{padding:16px 20px;background:#F1F5F9;border-left:2px solid #2E7D73;color:#526477;font-size:11px;line-height:1.8;margin:24px 0}
+.jc-web-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.jc-web-project-grid article{background:#fff;padding:28px;border:1px solid #D8E3E8;border-radius:12px;display:flex;flex-direction:column}
+.jc-web-project-grid article .jc-kicker{font-size:9px;color:#2E7D73;margin-bottom:14px}
+.jc-web-project-grid article .jc-web-category{font-size:10px;margin-bottom:16px}
+.jc-web-project-grid article .jc-web-project-highlight{border-top:1px solid #D8E3E8;padding-top:18px;margin-top:20px;font-size:12px}
+.jc-web-project-grid a{margin-top:auto;padding-top:22px;font-size:12px}
+.jc-web-process{padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin:36px 0 0}
+.jc-web-process li{border-top:2px solid #B9D3CE;padding-top:24px}
+.jc-web-process .jc-web-output{margin-top:22px;font-size:12px}
+.jc-web-output strong{display:block;color:#0F2740;margin-bottom:5px}
+.jc-web-faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.jc-web-faqs details{border-bottom:1px solid #D8E3E8;padding:20px 0}.jc-web-faqs details:first-child{padding-top:0}
+.jc-web-faqs summary{cursor:pointer;min-height:44px;display:list-item;padding-right:16px}
+.jc-web-faqs summary h3{display:inline;font-size:16px;line-height:1.6}
+.jc-web-faqs details p{margin-top:16px}
+.jc-web-related{padding-block:32px;background:#F1F5F9}
+.jc-web-related nav{display:flex;flex-wrap:wrap;gap:12px 22px}.jc-web-related a{color:#0F2740;text-underline-offset:4px;font-size:12px;line-height:2}
+.jc-web-related p{color:#526477;font-size:11px;line-height:1.8;margin:22px 0 0}
+.jc-services-final .jc-services-availability a{color:#fff;text-underline-offset:4px}
+@media(max-width:1000px){.jc-web-hero-grid{gap:32px;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}.jc-web-hero .jc-actions{gap:18px}.jc-web-project-grid{grid-template-columns:1fr}.jc-web-service-list article{gap:32px}.jc-web-faq-grid{gap:32px}.jc-web-process{gap:24px}}
+@media(max-width:700px){.jc-web-hero-grid,.jc-web-challenges,.jc-web-service-list article,.jc-web-process,.jc-web-faq-grid{grid-template-columns:1fr}.jc-web-hero h1{font-size:clamp(32px,8.6vw,39px)}.jc-web-highlights{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.jc-web-section{padding-block:48px}.jc-web-service-list article,.jc-web-project-grid article{padding:24px}.jc-web-service-list article{gap:24px}.jc-web-process{gap:28px}.jc-web-faq-grid{gap:28px}.jc-web-section h3{font-size:19px}.jc-web-faqs summary h3{font-size:16px}}
+.jc-web-demo{margin:0;min-width:0}
+.jc-web-device-layout{position:relative;padding:28px 0 72px}
+.jc-web-desktop-demo{display:block;width:92%;height:auto;border:6px solid #233E54;border-radius:12px;box-shadow:0 14px 32px #0003}
+.jc-web-mobile-demo{position:absolute;right:0;bottom:0;display:block;width:27%;height:auto;border:5px solid #233E54;border-radius:18px;box-shadow:0 12px 28px #0004}
+.jc-web-demo figcaption{margin-top:20px;font-size:10px;line-height:1.8;color:#C3CFDA;max-width:80%}
+.jc-web-note--plain{margin-top:0;border-top:0;padding-top:0}.jc-web-note a{color:#0F2740;text-underline-offset:4px}
+.jc-web-hero .jc-kicker{font-size:9px;letter-spacing:1.2px}
+@media(max-width:700px){.jc-web-demo{max-width:460px}.jc-web-device-layout{padding:12px 0 50px}.jc-web-demo figcaption{max-width:none}}

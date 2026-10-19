@@ -43,7 +43,7 @@
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
-.jc-results-unit { display: block; margin-top: 4px; color: #64748B; font-size: 12px; font-weight: 700; }
+.jc-results-unit { display: inline-block; margin-left: 4px; color: #64748B; font-size: .45em; font-weight: 700; line-height: 1; letter-spacing: 0; vertical-align: baseline; }
 .jc-results-item h3 { font-size: 14px; margin: 10px 0 4px; line-height: 1.6; letter-spacing: -.3px; }
 .jc-results .jc-results-item p { font-size: 11px; line-height: 1.8; color: #64748B; margin: 0; }
 .jc-results-note { margin: 8px 0 0; font-size: 10px; color: #64748B; line-height: 1.8; text-align: center; }

@@ -1,0 +1,92 @@
+{
+  "seo-aeo-geo": [
+    {
+      "src": "media/hero-badges/semrush_certified_agency_partner_badge.webp",
+      "alt": "Semrush Certified Agency Partner"
+    },
+    {
+      "src": "media/hero-badges/google_search_console_certificate.webp",
+      "alt": "Google Search Console Certificate"
+    },
+    {
+      "src": "media/hero-badges/google_data_analytics_certificate.webp",
+      "alt": "Google Data Analytics Certificate"
+    },
+    {
+      "src": "media/hero-badges/google_ai_essentials_certificate.webp",
+      "alt": "Google AI Essentials Certificate"
+    }
+  ],
+  "website-development": [
+    {
+      "src": "media/hero-badges/wordpress_developer_certification_badge.webp",
+      "alt": "WordPress Developer Certification"
+    },
+    {
+      "src": "media/hero-badges/webflow_certified_practitioner_badge.webp",
+      "alt": "Webflow Certified Practitioner"
+    },
+    {
+      "src": "media/hero-badges/shopify_certified_partner_badge.webp",
+      "alt": "Shopify Certified Partner"
+    },
+    {
+      "src": "media/hero-badges/01_funnel-builder.webp",
+      "alt": "HighLevel Funnel Builder skills badge"
+    }
+  ],
+  "gohighlevel-automation": [
+    {
+      "src": "media/service-badges/03_crm-specialist.webp",
+      "alt": "HighLevel CRM Specialist skills badge"
+    },
+    {
+      "src": "media/service-badges/02_workflow-automation.webp",
+      "alt": "HighLevel Workflow Automation skills badge"
+    },
+    {
+      "src": "media/service-badges/04_pipeline-builder.webp",
+      "alt": "HighLevel Pipeline Builder skills badge"
+    },
+    {
+      "src": "media/service-badges/15_ai-automation.webp",
+      "alt": "HighLevel AI Automation skills badge"
+    }
+  ],
+  "paid-advertising": [
+    {
+      "src": "media/hero-badges/meta_certified_media_buying_professional.webp",
+      "alt": "Meta Certified Media Buying Professional"
+    },
+    {
+      "src": "media/hero-badges/google_data_analytics_certificate.webp",
+      "alt": "Google Data Analytics Certificate"
+    },
+    {
+      "src": "media/service-badges/google_ads_certified_badge.webp",
+      "alt": "Google Ads Certified badge"
+    },
+    {
+      "src": "media/service-badges/linkedin_marketing_labs_certified_badge.webp",
+      "alt": "LinkedIn Marketing Labs Certified badge"
+    }
+  ],
+  "software-development": [
+    {
+      "src": "media/hero-badges/google_apis_certificate_completion.webp",
+      "alt": "Google APIs Certificate of Completion"
+    },
+    {
+      "src": "media/service-badges/Codex_AI_Coding_Specialist.webp",
+      "alt": "Codex AI Coding Specialist artwork"
+    },
+    {
+      "src": "media/service-badges/Claude_Code_AI_Assisted_Development_Specialist.webp",
+      "alt": "Claude Code AI Assisted Development Specialist artwork"
+    },
+    {
+      "src": "media/service-badges/GitHub_Foundations.webp",
+      "alt": "GitHub Foundations badge artwork"
+    }
+  ]
+}

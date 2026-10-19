@@ -1,0 +1,28 @@
+/* Halve vertical section spacing; content stays natural to prevent clipping. */
+.jc-service-compact .jc-services-hero{padding-block:16px 27px}
+.jc-service-compact :is(.jc-web-section,.jc-seo-section,.jc-services-directory,.jc-services-experience,.jc-services-scope){padding-block:36px}
+.jc-service-compact :is(.jc-services-process,.jc-services-detail-connection,.jc-services-final){padding-block:32px}
+.jc-service-compact :is(.jc-web-related,.jc-seo-related){padding-block:16px}
+.jc-service-compact .jc-services-breadcrumb{margin-bottom:17px}
+.jc-service-compact .jc-services-hero h1{font-size:clamp(28px,3vw,38px);line-height:1.16;letter-spacing:-1px;margin-bottom:14px}
+.jc-service-compact .jc-services-hero-copy p{font-size:13px;line-height:1.75;max-width:660px}
+.jc-service-compact .jc-services-hero .jc-actions{margin-top:16px;gap:16px}
+.jc-service-compact :is(.jc-web-highlights,.jc-seo-highlights){display:none}
+.jc-service-badges{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:18px}
+.jc-service-badges img{display:block;width:60px;height:60px;object-fit:contain}
+@media(max-width:700px){
+ .jc-service-compact .jc-services-hero{padding-block:12px 20px}
+ .jc-service-compact :is(.jc-web-section,.jc-seo-section,.jc-services-directory,.jc-services-experience,.jc-services-scope,.jc-services-process,.jc-services-detail-connection,.jc-services-final){padding-block:24px}
+ .jc-service-compact .jc-services-breadcrumb{margin-bottom:14px}
+ .jc-service-compact .jc-services-hero h1{font-size:30px}
+ .jc-service-compact .jc-service-hero-grid{gap:20px}
+ .jc-service-badges{gap:10px 14px}.jc-service-badges img{width:52px;height:52px}
+}
+
+/* Matching service art shares one responsive hero layout. */
+.jc-service-hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:40px;align-items:center}
+.jc-service-hero-grid>div{min-width:0}
+.jc-service-mascot{width:100%;max-width:360px;justify-self:center;margin:0;display:grid;place-items:center;--jc-glow-width:65%;--jc-glow-height:65%}
+.jc-service-mascot img{display:block;width:auto;max-width:100%;height:280px;object-fit:contain;opacity:1}
+@media(max-width:900px){.jc-service-hero-grid{gap:24px}.jc-service-mascot img{height:250px}}
+@media(max-width:700px){.jc-service-hero-grid{grid-template-columns:1fr}.jc-service-mascot{max-width:280px}.jc-service-mascot img{height:210px}}

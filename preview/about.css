@@ -1,0 +1,12 @@
+/* About page: plain background, supplied biography and real portrait. */
+.jc-about-page-hero{padding:28px 0 40px;background:#0F2740;color:#fff}
+.jc-about-page-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:64px;align-items:center}
+.jc-about-page-grid h1{font-size:46px;margin:16px 0 22px}.jc-about-page-grid p{font-size:14px;line-height:1.8;color:#C3CFDA;margin:0 0 14px}
+.jc-about-page-grid .jc-kicker{color:#49B8AA;font-size:10px}.jc-about-page-grid strong{color:#fff}
+.jc-about-page-grid img{display:block;width:100%;max-width:340px;height:auto;border-radius:12px}
+.jc-about-page-grid .jc-button{background:#fff;color:#0F2740}.jc-about-page-grid .jc-text-link{color:#fff}
+.jc-about-page-highlights{list-style:none;display:flex;flex-wrap:wrap;gap:16px 32px;margin:28px 0 0;padding:20px 0 0;border-top:1px solid #ffffff30;color:#C3CFDA;font-size:11px;line-height:1.8}
+.jc-about-page-expertise{padding:40px 0}.jc-about-page-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px;margin-top:28px}
+.jc-about-page-cards article{border-left:2px solid #B9D3CE;padding-left:20px}.jc-about-page-cards h3{font-size:20px;margin:0 0 12px}
+.jc-about-page-cards p{font-size:13px;line-height:1.8;color:#526477}.jc-about-page-cards a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;font-weight:700;color:#2E7D73;text-underline-offset:4px}
+@media(max-width:700px){.jc-about-page-grid,.jc-about-page-cards{grid-template-columns:1fr;gap:28px}.jc-about-page-grid h1{font-size:36px}.jc-about-page-grid img{max-width:300px}.jc-about-page-grid p{font-size:13px}.jc-about-page-hero{padding-block:24px}.jc-about-page-expertise{padding-block:28px}}

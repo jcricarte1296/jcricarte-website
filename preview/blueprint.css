@@ -33,7 +33,8 @@
   position: relative;
   z-index: 2;
 }
-.jc-services-section.jc-blueprint::before {
+.jc-services-section.jc-blueprint::before,
+.jcr-own05-map.jc-blueprint::before {
   background-position: right top, center, center;
   mask-image: linear-gradient(90deg, rgb(0 0 0 / .18), rgb(0 0 0 / .6) 50%, #000);
 }

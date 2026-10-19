@@ -27,14 +27,19 @@
     timeline.style.setProperty('--jc-system-progress', progress.toFixed(4));
     let current = -1;
     items.forEach((item, index) => {
-      const reached = reduced.matches || centers[index] <= cursor;
+      const passed = centers[index] <= cursor;
+      const reached = reduced.matches || passed;
       item.classList.toggle('is-active', reached);
+      if (passed) current = index;
       if (reached) {
-        current = index;
         item.classList.add('is-visible');
       }
     });
     items.forEach((item, index) => item.classList.toggle('is-current', index === current));
+    const logoTop = reduced.matches
+      ? centers[Math.max(0, current)]
+      : Math.max(start, Math.min(start + length, cursor));
+    timeline.style.setProperty('--jc-system-logo-top', `${logoTop}px`);
   }
 
   function schedule(resize = false) {

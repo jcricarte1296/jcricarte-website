@@ -1,0 +1,107 @@
+/* White version of the supplied Full-Funnel Ownership map. */
+.jcr-own05-map {
+  grid-column: 1 / -1;
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid #D8E5E8;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0 18px 50px rgb(15 39 64 / .055);
+}
+.jcr-own05-intro { max-width: 780px; margin: 12px auto 36px; text-align: center; }
+.jcr-own05-channels { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px; margin-bottom: 44px; }
+.jcr-own05-channel { display: inline-flex; align-items: center; gap: 7px; padding: 8px 12px; border: 1px solid #D5E6E2; border-radius: 999px; color: #0F2740; background: #F5FAF9; font-size: 10px; font-weight: 600; line-height: 1.5; }
+.jcr-own05-channel { font-family: inherit; cursor: pointer; text-decoration: none; }
+.jcr-own05-channel.is-selected { border-color: #2E7D73; box-shadow: 0 0 0 2px rgb(46 125 115 / .08); }
+.jcr-own05-channel::before { content: ""; width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%; background: #2E7D73; }
+.jcr-own05-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 240px minmax(0, 1fr); grid-template-areas: "demand . outcome" "conversion portrait crm" "qualification . reporting"; gap: 44px 48px; align-items: center; }
+.jcr-own05-connectors { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.jcr-own05-connectors line { stroke: #2E7D73; stroke-opacity: .55; stroke-width: 1.5; stroke-dasharray: 6 8; }
+.jcr-own05-connectors line.is-selected { stroke-opacity: 1; stroke-width: 2; }
+.jcr-own05-card[hidden] { display: none; }
+.jcr-own05-card { position: relative; z-index: 1; display: flex; min-width: 0; min-height: 190px; flex-direction: column; padding: 20px; overflow: hidden; border: 1px solid #D8E5E8; border-radius: 16px; background: #FFFFFF; color: #0F2740; box-shadow: 0 8px 26px rgb(15 39 64 / .055); text-decoration: none; transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease; }
+.jcr-own05-card::after { content: ""; position: absolute; top: 0; right: 0; width: 42px; height: 42px; background: #E5F3EF; clip-path: polygon(0 0, 100% 0, 100% 100%); pointer-events: none; }
+.jcr-own05-demand { grid-area: demand; }
+.jcr-own05-conversion { grid-area: conversion; }
+.jcr-own05-crm { grid-area: crm; }
+.jcr-own05-qualification { grid-area: qualification; }
+.jcr-own05-outcome { grid-area: outcome; align-items: center; text-align: center; border-color: #A9CDC4; background: #F6FBF9; }
+.jcr-own05-reporting { grid-area: reporting; }
+.jcr-own05-icon { display: grid; place-items: center; width: 40px; height: 40px; flex: 0 0 40px; margin-bottom: 13px; border: 1px solid #CBE2DB; border-radius: 11px; color: #2E7D73; background: #EFF7F4; }
+.jcr-own05-icon svg { width: 22px; height: 22px; }
+.jc-home .jcr-own05-card h3 { margin: 0; color: #0F2740; font-size: 16px; line-height: 1.4; letter-spacing: -.35px; }
+.jc-about .jcr-own05-card p { margin: 9px 0 0; color: #526477; font-size: 12px; line-height: 1.7; }
+.jcr-own05-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.jcr-own05-tag { display: inline-flex; padding: 5px 8px; border: 1px solid #D8E8E2; border-radius: 999px; color: #2E7D73; background: #F3F8F6; font-size: 9px; font-weight: 600; line-height: 1.4; }
+.jcr-own05-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 15px; }
+.jcr-own05-card-link { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; color: #2E7D73; font-size: 10px; font-weight: 700; line-height: 1.5; text-decoration: none; }
+.jcr-own05-card-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.jcr-own05-portrait { grid-area: portrait; position: relative; z-index: 2; display: grid; place-items: center; width: 240px; height: 240px; margin: 12px auto 18px; }
+.jcr-own05-portrait::before, .jcr-own05-portrait::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none; }
+.jcr-own05-portrait::before { inset: -10px; border: 1px dashed rgb(46 125 115 / .45); }
+.jcr-own05-portrait::after { inset: -24px; border: 1px solid rgb(46 125 115 / .14); box-shadow: 0 0 36px rgb(46 125 115 / .1); }
+.jcr-own05-photo { position: relative; width: 208px; height: 208px; overflow: hidden; border: 6px solid #FFFFFF; border-radius: 50%; background: #0F2740; box-shadow: 0 0 0 2px #2E7D73, 0 12px 32px rgb(15 39 64 / .14); }
+.jcr-own05-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
+.jcr-own05-person-label { position: absolute; left: 50%; bottom: -12px; width: 280px; max-width: calc(100% + 40px); padding: 10px 14px; transform: translateX(-50%); border: 1px solid #BEDBD2; border-radius: 12px; background: #FFFFFF; color: #2E7D73; box-shadow: 0 6px 20px rgb(15 39 64 / .065); text-align: center; font-size: 10px; font-weight: 700; line-height: 1.6; }
+@media (hover: hover) and (pointer: fine) {
+  .jcr-own05-card:hover { transform: translateY(-5px); border-color: #77B5A5; box-shadow: 0 16px 32px rgb(46 125 115 / .12); }
+}
+.jcr-own05-card:focus-within { border-color: #2E7D73; box-shadow: 0 12px 30px rgb(46 125 115 / .12); }
+@media (prefers-reduced-motion: no-preference) {
+  .jcr-own05-connectors line { animation: jcr05-flow-line 12s linear infinite; }
+  .jcr-own05-portrait::before { animation: jcr05-orbit 32s linear infinite; }
+}
+@keyframes jcr05-flow-line { to { stroke-dashoffset: -140; } }
+@keyframes jcr05-orbit { to { transform: rotate(360deg); } }
+@media (max-width: 1000px) {
+  .jcr-own05-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "portrait portrait" "demand conversion" "qualification crm" "outcome reporting"; gap: 24px; align-items: stretch; }
+  .jcr-own05-connectors { display: none; }
+  .is-interactive .jcr-own05-connectors { display: block; }
+  .jcr-own05-portrait { margin-block: 20px 40px; }
+  .jcr-own05-channels { margin-bottom: 24px; }
+}
+/* Progressive enhancement: the same pills become connected service nodes on mobile. */
+@media (max-width: 600px) {
+  .jcr-own05-map.is-mobile-map {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas: "intro intro intro" "demand-node . outcome-node" "conversion-node portrait crm-node" "qualification-node . reporting-node" "label label label";
+    gap: 18px 10px;
+    align-items: center;
+  }
+  .is-mobile-map .jcr-own05-intro { grid-area: intro; margin: 0 auto 8px; }
+  .is-mobile-map .jcr-own05-channels, .is-mobile-map .jcr-own05-grid { display: contents; }
+  .is-mobile-map .jcr-own05-channel { position: relative; z-index: 2; min-width: 0; min-height: 48px; justify-content: center; gap: 4px; padding: 8px 6px; font-size: 9px; text-align: center; overflow-wrap: anywhere; }
+  .is-mobile-map .jcr-own05-channel::before { display: none; }
+  .is-mobile-map [data-jcr05-select="demand"] { grid-area: demand-node; }
+  .is-mobile-map [data-jcr05-select="conversion"] { grid-area: conversion-node; }
+  .is-mobile-map [data-jcr05-select="crm"] { grid-area: crm-node; }
+  .is-mobile-map [data-jcr05-select="qualification"] { grid-area: qualification-node; }
+  .is-mobile-map [data-jcr05-select="outcome"] { grid-area: outcome-node; }
+  .is-mobile-map [data-jcr05-select="reporting"] { grid-area: reporting-node; }
+  .is-mobile-map .jcr-own05-portrait { grid-area: portrait; width: 100%; max-width: 100px; height: auto; aspect-ratio: 1; margin: 12px auto; }
+  .is-mobile-map .jcr-own05-photo { width: calc(100% - 12px); height: auto; aspect-ratio: 1; border-width: 3px; }
+  .is-mobile-map .jcr-own05-portrait::before { inset: -4px; }
+  .is-mobile-map .jcr-own05-portrait::after { inset: -8px; }
+  .is-mobile-map .jcr-own05-person-label { grid-area: label; position: static; width: 100%; max-width: none; transform: none; }
+}
+@media (max-width: 600px) {
+  .jcr-own05-map { padding: 20px 16px; border-radius: 18px; }
+  .jcr-own05-grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "portrait" "demand" "conversion" "qualification" "crm" "outcome" "reporting"; gap: 18px; }
+  .jcr-own05-channels { gap: 7px; }
+  .jcr-own05-channel { padding: 7px 9px; font-size: 9px; }
+  .jcr-own05-card { min-height: 0; padding: 18px; }
+  .jcr-own05-portrait { width: 180px; height: 180px; margin-block: 24px 36px; }
+  .jcr-own05-photo { width: 160px; height: 160px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .jcr-own05-card { transition: none; }
+  .jcr-own05-card:hover { transform: none; }
+}
+
+@media (min-width: 601px) {
+  .jcr-own05-channels { display: none; }
+}

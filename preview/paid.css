@@ -1,0 +1,10 @@
+/* Paid Advertising visual; reuse the shared service-page layouts. */
+.jc-ads-channel-panel{padding:28px;background:#0F2740;border:1px solid #ffffff30;border-radius:14px;box-shadow:0 14px 32px #0002}
+.jc-ads-profile{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.jc-ads-profile img{display:block;flex:none;width:72px;height:72px;object-fit:cover;border-radius:50%;border:1px solid #ffffff40}
+.jc-ads-profile strong{font-size:13px;line-height:1.8}.jc-ads-profile span{display:block;font-size:10px;color:#C3CFDA;line-height:1.8;margin-top:4px}
+.jc-ads-channel-panel ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:18px}
+.jc-ads-channel-panel li{border-left:2px solid #49B8AA;padding-left:14px}.jc-ads-channel-panel li strong{display:block;font-size:15px;line-height:1.6}
+.jc-ads-channel-panel li span{display:block;margin-top:5px;color:#C3CFDA;font-size:11px;line-height:1.8}
+.jc-ads-panel-note{font-size:11px;line-height:1.8;color:#C3CFDA;margin:24px 0 0;padding-top:18px;border-top:1px solid #ffffff26}
+@media(max-width:700px){.jc-ads-channel-panel{padding:24px}.jc-ads-profile{gap:12px}.jc-ads-profile img{width:60px;height:60px}}
